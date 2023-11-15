@@ -1,11 +1,11 @@
-<form [formGroup]="profileForm">
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
   <label>
     Name
-    <input type="text" formControlName="name" />
+    <input type="text" formControlName="name" (change)="checkIfDirty()" />
   </label>
   <label>
     Email
-    <input type="email" formControlName="email" />
+    <input type="email" formControlName="email" (change)="checkIfDirty()" />
   </label>
   <button type="submit">Submit</button>
 </form>
