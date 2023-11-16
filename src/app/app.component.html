@@ -1,1 +1,17 @@
-<app-form />
+<nav>
+  <div>
+    <h1 class="neon">forme</h1>
+  </div>
+  <menu>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/form" routerLinkActive="active">Form</a>
+  </menu>
+</nav>
+<main>
+  <router-outlet />
+</main>
