@@ -1,0 +1,36 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: rgb(190, 173, 250);
+  color: #d0bfff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #faf3f0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff3da;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: dotted;
+}
+
+.active {
+  color: #ffdb8e;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 4rem;
+}
