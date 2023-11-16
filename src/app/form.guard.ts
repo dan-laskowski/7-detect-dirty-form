@@ -8,11 +8,7 @@ export const FormGuard: CanDeactivateFn<FormComponent> = (
   nextState
 ) => {
   if (component.profileForm.dirty) {
-    if (confirm('Are you sure to leave and lost form data?')) {
-      return true;
-    } else {
-      return false;
-    }
+    return confirm('Are you sure to leave and lost form data?');
   }
   return true;
 };
